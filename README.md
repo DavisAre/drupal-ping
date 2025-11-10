@@ -22,6 +22,8 @@ It is not suitable for subsystem health-checks for things like container or load
 }
 ```
 
+Note: The `web` path should be replaced to the actual directory name that is used by the webserver to serve Drupal. Depending on setup it may be, for example, `docroot`. Since the `dropin` plugin physically moves the '_ping.php', you may need re-install `wunderio/drupal-ping` package if you accidentally specified wrong destination path during first package install.
+
 2. Then install the composer package as usual with:
 
 ```
